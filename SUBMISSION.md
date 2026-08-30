@@ -23,17 +23,17 @@ The policy is withheld from the prompt, so injection can only try to move a tier
 
 GenVM-lint structure fixed: exec_prompt is inside the inline callback passed directly to prompt_comparative. No helper/factory callback.
 
-Offline tests 7/7. Studio deploy/evidence to be filled tomorrow. Method surface to verify: open_scope/submit_request/close/evaluate.
+Offline tests 7/7. Studio deploy finalized; Explorer source matches GitHub source. Method surface verified: open_scope/submit_request/close/evaluate.
 ```
 
 ## Links / evidence
 
 - GitHub: https://github.com/Zhekinmaksim/genlayer-capability-scope-adjudicator
-- Explorer contract: 0x...
-- Deploy tx: 0x...
-- Smoke tx: 0x...
-- Commit: ...
-- Studio date: 2026-08-31
+- Explorer contract: https://explorer-studio.genlayer.com/address/0xcD6B7df7D492d5f19d1030c2de35202118CC9A28
+- Deploy tx: https://explorer-studio.genlayer.com/tx/0xd6e71401496ef0fcc8d580ed39d4a5ff0773ff055bcb088e1ad2a6b91080f11d
+- Smoke tx: not run; deploy and method-surface verification only
+- Contract source commit: d09baf12bbcb080ec1c62af58395e6706c5bcfb9
+- Studio date: 2026-08-30
 - Explorer source contains inline `evaluate` callback and no `_judgment_fn`
+- Explorer `contract_code` contains the GitHub `contract.py` exactly
 - `python3 sim/check.py`: 7/7 pass
-
